@@ -1,0 +1,51 @@
+:root {
+  --primary-pure: #00d7ff;
+  --primary-muted: #a5e4ff;
+
+  --primary-tint-1: #46e2ff;
+  --primary-tint-2: #74e9ff;
+  --primary-tint-3: #a2f0ff;
+  --primary-tint-4: #d1f8ff;
+  --primary-tint-5: #e8fbff;
+  --primary-tint-6: #f8feff;
+
+  --primary-shade-1: #00accc;
+  --primary-shade-2: #008199;
+  --primary-shade-3: #005666;
+  --primary-shade-4: #002b33;
+  --primary-shade-5: #00161a;
+  --primary-shade-6: #000506;
+
+  --complementary-pure: #ff5d00;
+  --complementary-muted: #f3aa85;
+
+  --complementary-tint-1: #ff8946;
+  --complementary-tint-2: #ffa774;
+  --complementary-tint-3: #ffc4a2;
+  --complementary-tint-4: #ffe2d1;
+  --complementary-tint-5: #fff0e8;
+
+  --complementary-shade-1: #cc4a00;
+  --complementary-shade-2: #993800;
+  --complementary-shade-3: #662500;
+  --complementary-shade-4: #331300;
+  --complementary-shade-5: #1a0900;
+
+  --red-pure: #ff3c4e;
+  --red-muted: #f8a49d;
+
+  --yellow-pure: #ffad00;
+  --yellow-muted: #ecd177;
+
+  --green-pure: #3ae500;
+  --green-muted: #a1e984;
+
+  --blue-pure: #34b1ff;
+  --blue-muted: #9fc4ff;
+
+  --violet-pure: #d282ff;
+  --violet-muted: #d9b8ff;
+
+  --fuschia-pure: #ff38ad;
+  --fuschia-muted: #ff96d1;
+}

@@ -1,0 +1,156 @@
+@import url("/src/css/config.css");
+
+* {
+  box-sizing: inherit;
+}
+
+/* hmm... */
+::selection {
+  background-color: var(--complementary-pure);
+  color: var(--background-level-1);
+}
+
+html,
+body {
+  margin: 0 auto;
+  height: var(--page-height);
+}
+
+body {
+  box-sizing: border-box;
+
+  width: var(--body-width-default);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--background-level-1);
+}
+
+@media screen {
+  body {
+    width: var(--body-width-large-screen);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: var(--body-width-small-screen);
+  }
+}
+
+a {
+  color: var(--foreground-complementary-3);
+}
+
+a:visited {
+  color: var(--foreground-complementary-2);
+}
+
+.qexat {
+  color: var(--foreground-complementary-3);
+
+  &::selection {
+    color: var(--foreground-level-3);
+  }
+}
+
+section.slide {
+  height: 100dvh;
+  width: 75%;
+  padding: var(--slide-content-padding);
+
+  &.centered-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.main-title,
+.popup-title {
+  margin: var(--title-margin);
+
+  text-transform: lowercase;
+
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+}
+
+.main-title {
+  font-size: var(--main-title-font-size);
+}
+
+.popup-title {
+  font-size: var(--popup-title-font-size);
+}
+
+.description {
+  width: var(--description-width);
+
+  font-family: var(--description-font-family);
+  font-size: var(--description-font-size);
+
+  color: var(--foreground-level-1);
+}
+
+div.menu {
+  width: var(--menu-width);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+
+  & > button {
+    width: 100%;
+    padding: 1em;
+
+    background-color: var(--background-level-1);
+    color: var(--foreground-level-1);
+    border: var(--border-width-default) solid var(--foreground-level-1);
+
+    font-family: var(--menu-button-font-family);
+    font-size: var(--menu-button-font-size);
+
+    cursor: pointer;
+
+    transition-duration: var(--menu-button-transition-duration);
+    transition-property: top, width, height;
+    transition-timing-function: ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--foreground-complementary-3);
+      border-color: var(--foreground-complementary-3);
+
+      &::before {
+        content: "> ";
+      }
+
+      &::after {
+        content: " <";
+      }
+    }
+  }
+}
+
+dialog.popup {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 1em;
+  margin: 0;
+
+  background-color: var(--background-level-1);
+  color: var(--foreground-level-2);
+  border: var(--border-width-default) solid var(--foreground-level-1);
+
+  transition-property: top, left, width, height;
+}
+
+footer {
+  font-family: var(--font-monospace);
+}
