@@ -1,4 +1,4 @@
-@import url("/src/css/config.css");
+@import url("./config.css");
 
 * {
   box-sizing: inherit;
