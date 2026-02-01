@@ -5,7 +5,7 @@
   color-scheme: light dark;
 
   --small-screen-width: 768px;
-  --font-monospace: "DotGothic16", monospace;
+  --font-monospace: "VT323", monospace;
 
   --background-level-1: light-dark(
     var(--primary-tint-6),
@@ -58,13 +58,11 @@
 
   --border-width-default: 2px;
 
-  --page-height: 100%;
+  --page-height: fit-content;
 
   --body-width-default: 100%;
   --body-width-large-screen: 100%;
   --body-width-small-screen: 100%;
-
-  --qexat-side-depth: 0.05em;
 
   --slide-content-padding: 5em 10em;
 
@@ -72,18 +70,9 @@
   --title-font-weight: 900;
   --title-margin: 0;
 
-  --main-title-font-size: 10em;
-  --popup-title-font-size: 7em;
-
   --description-font-family: var(--font-monospace);
   --description-font-size: 1.8em;
   --description-width: 100%;
-
-  --menu-width: 100%;
-  --menu-button-font-family: var(--font-monospace);
-  --menu-button-font-size: 1.8em;
-
-  --popup-transition-duration: 300ms;
 }
 
 * {
@@ -92,13 +81,8 @@
 
 @media (max-width: 768px) {
   :root {
-    --slide-content-padding: 5em 0;
-
-    --main-title-font-size: 7em;
-    --popup-title-font-size: 5em;
+    --slide-content-padding: 2.5em 0;
 
     --description-font-size: 1.2em;
-
-    --menu-button-font-size: 1.5em;
   }
 }
